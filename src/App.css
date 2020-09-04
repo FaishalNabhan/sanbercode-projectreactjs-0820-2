@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.Form {
+  width: 40%;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.innerText {
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.layouting {
+  display: block;
+  margin-bottom: 1em;
+}
