@@ -2,38 +2,39 @@ import React from 'react';
 
 class Tugas9 extends React.Component {
     render(){
-        return (
-            <div className="Form">
-            <h1 style={{textAlign:'center'}}><b>Form Pembelian Buah</b></h1>
-            <div classname="innerText">
-              <div classname="layouting">
-                <table style={{textAlign:"left"}}>
-                  <tr>
-                    <th><label for="name">Nama Pelanggan</label></th>
-                    <th><input type="text" id="name" name="name"></input></th>
-                  </tr>
-                  <tr>
-                    <th><label for="email">Daftar Buah</label></th>
-                    <th><input type="checkbox" id="buah1" name="buah1" value="Semangka"></input>
-                          <label for="buah1"> Semangka</label><br></br>
-                        <input type="checkbox" id="buah2" name="buah2" value="Jeruk"></input>
-                          <label for="buah2"> Jeruk</label><br></br>
-                        <input type="checkbox" id="buah3" name="buah3" value="Nanas"></input>
-                          <label for="buah3"> Nanas</label><br></br>
-                        <input type="checkbox" id="buah4" name="buah4" value="Salak"></input>
-                          <label for="buah4"> Salak</label><br></br>
-                        <input type="checkbox" id="buah5" name="buah5" value="Anggur"></input>
-                          <label for="buah5"> Anggur</label>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th><input type="submit" class="sendbutton" value="Kirim"></input></th>
-                  </tr>
-                </table>
+      return (
+        <div style={{width: "40%", margin: "0 auto", marginTop: "20px", border: "1px solid #000", borderRadius: "20px"}}>
+          <h1 style={{"text-align" : "center"}}>Form Pembelian Buah</h1>
+          <div style={{padding: "20px", paddingTop: "0px"}}>
+            <div style={{display: "block", "margin-bottom": "1em"}}>
+              <div style={{display: "inline-block", width: "150px", "font-weight": "bold", "font-size": "16px"}}>
+                Nama Pelanggan
+              </div>          
+              <input style={{display: "inline-block"}} type="text" name="name" />
+            </div>
+            <div style={{display: "block", "margin-bottom": "1em"}}>
+              <div style={{display: "inline-block", width: "150px", "font-weight": "bold", "font-size": "16px"}}>
+                Daftar Item 
+              </div>
+              <div style={{display: "inline-block"}}>
+                <input type="checkbox" name="semangka" value="semangka" />
+                <label>Semangka</label><br/>
+                <input type="checkbox" name="jeruk" value="jeruk" />
+                <label>Jeruk</label><br/>
+                <input type="checkbox" name="nanas" value="nanas" />
+                <label>Nanas</label><br/>
+                <input type="checkbox" name="salak" value="salak" />
+                <label>Salak</label><br/>
+                <input type="checkbox" name="anggur" value="anggur" />
+                <label>Anggur</label><br/>
               </div>
             </div>
+            <button style={{background: "white", "border-radius": "20px"}}>
+              <a href="#" style={{"text-decoration": "none", color: "black"}}>Kirim</a>
+            </button>
           </div>
-        )
+        </div>
+      );
     }
 }
 
