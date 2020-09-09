@@ -7,7 +7,7 @@ class Item extends Component{
       <tr>
         <td>{this.props.item.nama}</td>
         <td>{this.props.item.harga}</td>
-        <td>{this.props.item.berat/1000} kg</td>
+        <td>{this.props.item.berat} gram</td>
       </tr>
     )
   }
