@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import Tugas9 from './Tugas-9/tugas9.js';
-import DaftarBuah from './Tugas-10/tugas10.js';
+// import DaftarBuah from './Tugas-10/tugas10.js';
 import Timer from './Tugas-11/time.js';
 import FormBuah from './Tugas-12/form.js';
+import DaftarBuah from './Tugas-13/HooksBuah.js';
 // import logo from './logo.svg';
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
     <>
       {/* <Tugas9 />
       <DaftarBuah />
-      <Timer /> */}
-      <FormBuah />
-
+      <Timer />
+      <FormBuah /> */}
+      <DaftarBuah/>
     </>
   );
 }
