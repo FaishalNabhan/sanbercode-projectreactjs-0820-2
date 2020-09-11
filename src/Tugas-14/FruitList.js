@@ -6,13 +6,13 @@ const FruitList = () =>{
 
   const handleDelete=(event)=>{
     var idFruit = parseInt(event.target.value)
-    var newFruit = movie.filter(x=> x.id !== idFruit)
+    var newFruit = fruit.filter(x=> x.id !== idFruit)
     setFruit([...newFruit])
   }
 
   const handleEdit=(event)=>{
     var idFruit = parseInt(event.target.value)
-    var singleFruit = fruit.find(x=> x.id === idMovie)
+    var singleFruit = fruit.find(x=> x.id === idFruit)
     setInputForm({...inputForm, nama: singleFruit.nama, harga: singleFruit.harga, berat: singleFruit.berat,
         id: idFruit})
   }
@@ -34,7 +34,7 @@ const FruitList = () =>{
         return(
           <tr key={el.id}>
             <td>{idx+1}</td>
-            <td>{el.name} </td>
+            <td>{el.nama} </td>
             <td>{el.harga} </td>
             <td>{el.berat/1000} kg / 1000</td>
             <td>

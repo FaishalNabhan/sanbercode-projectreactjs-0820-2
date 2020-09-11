@@ -2,14 +2,14 @@ import React, {useState, useContext} from "react"
 import {FruitContext} from "./BuahContext.js"
 
 const FruitForm = () =>{
-  const [fruit, setfruit, inputForm, setInputForm] = useContext(FruitContext)
+  const [fruit, setFruit, inputForm, setInputForm] = useContext(FruitContext)
 
 
   const handleSubmit = (event) =>{
     event.preventDefault()
     var newId = fruit.length + 1
     if (inputForm.id === null){
-      setMovie([...fruit, {nama: inputForm.nama, harga: inputForm.harga, berat: inputForm.berat, id: newId}])
+      setFruit([...fruit, {nama: inputForm.nama, harga: inputForm.harga, berat: inputForm.berat, id: newId}])
     }else{
       var singleFruit = fruit.find(x=> x.id === inputForm.id)
       singleFruit.nama = inputForm.nama
@@ -37,7 +37,7 @@ const FruitForm = () =>{
     <>
       <form onSubmit={handleSubmit}>
 
-        <strong>Nama Buah : </strong><input type="text" value={inputForm.name} onChange={handleChangeName} /><br/>
+        <strong>Nama Buah : </strong><input type="text" value={inputForm.nama} onChange={handleChangeName} /><br/>
         <strong>Harga Buah : </strong><input type="number" value={inputForm.harga} onChange={handleChangePrice} /><br/>
         <strong>Berat Buah : </strong><input type="number" value={inputForm.berat} onChange={handleChangeWeight} /> <br/>
         <button>submit</button>
